@@ -1,1 +1,11 @@
+function doGet() {
+  const FAVICON_FILE_ID = '11o94yfouwYSpdnnz0bqUBOBusho_hZ0I'; 
+  const faviconUrl = `https://drive.google.com/uc?id=${FAVICON_FILE_ID}&export=download&format=png`;
 
+ 
+  const htmlOutput = HtmlService.createHtmlOutputFromFile('index')
+    .setTitle('Thông tin HSE - 5S kho vật tư tiêu hao')
+    .setFaviconUrl(faviconUrl); // Đặt favicon
+
+  return htmlOutput;
+}
