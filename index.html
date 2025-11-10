@@ -1,11 +1,22 @@
-function doGet() {
-  const FAVICON_FILE_ID = '11o94yfouwYSpdnnz0bqUBOBusho_hZ0I'; 
-  const faviconUrl = `https://drive.google.com/uc?id=${FAVICON_FILE_ID}&export=download&format=png`;
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thông tin HSE-5S</title>
 
- 
-  const htmlOutput = HtmlService.createHtmlOutputFromFile('index')
-    .setTitle('Thông tin HSE - 5S kho vật tư tiêu hao')
-    .setFaviconUrl(faviconUrl); // Đặt favicon
+  <!-- Logo hiển thị trên tab -->
+  <link rel="icon" type="image/png" href="Logo DDC.png">
 
-  return htmlOutput;
-}
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    iframe {
+      width: 100%;
+      height: 100vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/a/macros/daidung.vn/s/AKfycbw3IV5pnOcDd1JoaVLWE1N7nbKTO58J2FQJ51GjLWsgu6Je0MorWNLOObRQ3SYVn6PJ4w/exec" loading="lazy"></iframe>
+</body>
+</html>
